@@ -318,7 +318,36 @@
     .tab-content::before { content: attr(data-title); font-size: 18px; font-weight: 700; color: #2B6CB0; display: block; margin: 20px 0 10px; border-bottom: 2px solid #2B6CB0; padding-bottom: 4px; }
     body { background: white; }
   }
-</style>
+</style
+ /* ===== ACCESS BUTTON ===== */
+ .access-btn {
+      display: block;
+      max-width: 960px;
+      margin: 16px auto;
+      padding: 16px;
+      background: linear-gradient(135deg, #48BB78 0%, #38A169 100%);
+      color: white !important;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 15px;
+      box-shadow: 0 4px 12px rgba(72,187,120,0.3);
+      transition: all 0.3s ease;
+      border: none;
+ }
+ .access-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(72,187,120,0.4);
+      background: linear-gradient(135deg, #38A169 0%, #2F855A 100%);
+ }
+ .access-btn span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+ }
+ >
 </head>
 <body>
 
@@ -334,6 +363,12 @@
 <div class="info-banner">
   ℹ️ このマニュアルは、各店舗・工場で働くスタッフの皆さん向けです。わからないことがあれば、遠慮なく管理者に聞いてください。
 </div>
+     <!-- ===== ACCESS BUTTON ===== -->
+     <a class="access-btn" href="https://attendance.moneyforward.com/my_page" target="_blank">
+         <span>            MF Cloud Attendance Access
+         </span>
+     </a>
+ 
 
 <!-- ===== TABS ===== -->
 <div class="tabs-container">
